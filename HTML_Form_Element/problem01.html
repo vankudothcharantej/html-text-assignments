@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Admission Application Form</title>
+</head>
+<body>
+
+    <h1>College Admission Application Form</h1>
+
+    <p>
+        Welcome to our college admission portal. Please fill in the form
+        carefully and provide accurate academic and personal information.
+    </p>
+
+    <img src="https://via.placeholder.com/600x150?text=College+Admission"
+         alt="College Admission Banner">
+
+    <p>
+        <a href="https://www.gla.ac.in/" target="_blank">Visit College Website</a>
+    </p>
+
+    <hr>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <h2>Personal Information</h2>
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="full_name"
+               placeholder="Enter your full name"
+               minlength="3" maxlength="60" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="date_of_birth"
+               min="1990-01-01" max="2010-12-31" required>
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"
+               placeholder="example@gmail.com" required>
+        <br><br>
+
+        <label for="mobile">Mobile Number:</label><br>
+        <input type="tel" id="mobile" name="mobile"
+               placeholder="10-digit mobile number"
+               pattern="[0-9]{10}" maxlength="10" required>
+        <br><br>
+
+        <label for="pin">Application PIN:</label><br>
+        <input type="password" id="pin" name="application_pin"
+               minlength="6" maxlength="12" required>
+        <br><br>
+
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <label for="category">Category:</label><br>
+        <select id="category" name="category" required>
+            <option value="">-- Select Category --</option>
+            <option value="general">General</option>
+            <option value="obc">OBC</option>
+            <option value="sc">SC</option>
+            <option value="st">ST</option>
+            <option value="ews">EWS</option>
+        </select>
+
+        <br><br>
+
+        <label for="address">Permanent Address:</label><br>
+        <textarea id="address" name="permanent_address"
+                  rows="5" cols="50"
+                  minlength="10" maxlength="250"
+                  placeholder="Enter your complete address"
+                  required></textarea>
+
+        <hr>
+
+        <h2>Course Selection</h2>
+
+        <label for="course">Choose Program:</label><br>
+        <select id="course" name="course" required>
+            <option value="">-- Select Program --</option>
+            <option value="cse">B.Tech CSE</option>
+            <option value="aiml">B.Tech CSE AI & ML</option>
+            <option value="ece">B.Tech ECE</option>
+            <option value="eee">B.Tech EEE</option>
+            <option value="me">B.Tech Mechanical Engineering</option>
+            <option value="ce">B.Tech Civil Engineering</option>
+            <option value="bba">BBA</option>
+        </select>
+
+        <hr>
+
+        <h2>Previous Qualification</h2>
+
+        <label for="qualification">Qualification:</label><br>
+        <select id="qualification" name="qualification" required>
+            <option value="">-- Select Qualification --</option>
+            <option value="10th">10th</option>
+            <option value="12th">12th / Intermediate</option>
+            <option value="diploma">Diploma</option>
+        </select>
+
+        <br><br>
+
+        <label for="percentage">Percentage / CGPA:</label><br>
+        <input type="number" id="percentage" name="percentage"
+               min="0" max="100" step="0.01"
+               placeholder="Enter percentage" required>
+        <br><br>
+
+        <label for="passing_year">Passing Year:</label><br>
+        <input type="number" id="passing_year" name="passing_year"
+               min="2000" max="2026" step="1" required>
+        <br><br>
+
+        <label for="school">School / College Name:</label><br>
+        <input type="text" id="school" name="school_college"
+               minlength="3" maxlength="100" required>
+        <br><br>
+
+        <h2>Admission Document</h2>
+
+        <label for="document">Upload Document:</label><br>
+        <input type="file" id="document" name="admission_document"
+               accept=".pdf,.jpg,.jpeg,.png" required>
+
+        <br><br>
+
+        <input type="checkbox" id="declaration"
+               name="declaration" value="accepted" required>
+        <label for="declaration">
+            I declare that the information provided by me is correct.
+        </label>
+
+        <br><br>
+
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>
+</html>
