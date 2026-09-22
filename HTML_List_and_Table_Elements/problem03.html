@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Academic Portal</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Department of Computer Science & Engineering</h1>
+        <h2>Department Academic Portal</h2>
+
+        <p>
+            Welcome to the Department Academic Portal. This page provides
+            students with the weekly timetable, subjects, faculty information,
+            academic rules and important department information.
+        </p>
+
+        <img
+            src="https://images.unsplash.com/photo-1562774053-701939374585"
+            alt="College campus building representing the academic department"
+            width="700"
+        >
+    </header>
+
+    <hr>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#introduction">Introduction</a> |
+        <a href="#timetable">Weekly Timetable</a> |
+        <a href="#subjects">Subjects</a> |
+        <a href="#faculty">Faculty</a> |
+        <a href="#rules">Academic Rules</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <hr>
+
+    <!-- Introduction -->
+    <section id="introduction">
+
+        <h2>1. Introduction</h2>
+
+        <p>
+            The Department of Computer Science and Engineering provides
+            students with knowledge and practical skills in programming,
+            artificial intelligence, machine learning, mathematics and
+            computer technologies.
+        </p>
+
+        <p>
+            <mark>Important Academic Notice:</mark>
+            Students must check the timetable regularly for changes in
+            classrooms, faculty and practical sessions.
+        </p>
+
+    </section>
+
+    <hr>
+
+    <!-- Weekly Timetable -->
+    <section id="timetable">
+
+        <h2>2. Weekly Timetable</h2>
+
+        <table border="1">
+
+            <caption>
+                <strong>B.Tech CSE AI & ML – Weekly Class Timetable</strong>
+            </caption>
+
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>1st Period<br>9:00–10:00</th>
+                    <th>2nd Period<br>10:00–11:00</th>
+                    <th>3rd Period<br>11:00–12:00</th>
+                    <th>Lunch<br>12:00–1:00</th>
+                    <th>4th Period<br>1:00–2:00</th>
+                    <th>5th Period<br>2:00–3:00</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <th>Monday</th>
+                    <td>Mathematics</td>
+                    <td>Python</td>
+                    <td>Physics</td>
+
+                    <!-- Lunch is common to the whole day -->
+                    <td rowspan="6"><strong>LUNCH</strong></td>
+
+                    <td>AI & ML</td>
+                    <td>English</td>
+                </tr>
+
+                <tr>
+                    <th>Tuesday</th>
+                    <td>Python</td>
+                    <td>Mathematics</td>
+                    <td>English</td>
+                    <td colspan="2">Python Programming Lab</td>
+                </tr>
+
+                <tr>
+                    <th>Wednesday</th>
+                    <td>Physics</td>
+                    <td>AI & ML</td>
+                    <td>Mathematics</td>
+                    <td>Python</td>
+                    <td>Sports</td>
+                </tr>
+
+                <tr>
+                    <th>Thursday</th>
+                    <td>AI & ML</td>
+                    <td>Python</td>
+                    <td>Physics</td>
+                    <td colspan="2">Web Development Lab</td>
+                </tr>
+
+                <tr>
+                    <th>Friday</th>
+                    <td>Mathematics</td>
+                    <td>English</td>
+                    <td>AI & ML</td>
+                    <td>Physics</td>
+                    <td>Python</td>
+                </tr>
+
+                <tr>
+                    <th>Saturday</th>
+                    <td>Python</td>
+                    <td>Physics</td>
+                    <td>Mathematics</td>
+                    <td>AI & ML</td>
+                    <td>Mentoring</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <hr>
+
+    <!-- Subjects -->
+    <section id="subjects">
+
+        <h2>3. Subjects</h2>
+
+        <table border="1">
+
+            <caption>
+                <strong>Subject and Faculty Information</strong>
+            </caption>
+
+            <thead>
+                <tr>
+                    <th>Subject Code</th>
+                    <th>Subject Name</th>
+                    <th>Faculty</th>
+                    <th>Credits</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>CSE101</td>
+                    <td>Python Programming</td>
+                    <td>Dr. Rahul Sharma</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>MAT101</td>
+                    <td>Engineering Mathematics</td>
+                    <td>Dr. Priya Singh</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>PHY101</td>
+                    <td>Engineering Physics</td>
+                    <td>Dr. Amit Kumar</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>AIM101</td>
+                    <td>Introduction to AI & ML</td>
+                    <td>Dr. Neha Verma</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>ENG101</td>
+                    <td>Communication Skills</td>
+                    <td>Ms. Anjali Gupta</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>WEB101</td>
+                    <td>Web Development</td>
+                    <td>Mr. Arjun Mehta</td>
+                    <td>3</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <hr>
+
+    <!-- Practical Class Sequence -->
+    <section>
+
+        <h2>4. Steps Before a Practical Class</h2>
+
+        <p>
+            Students should follow these steps before entering the laboratory:
+        </p>
+
+        <!-- Ordered list because this is a sequence -->
+        <ol>
+            <li>Check the practical schedule and laboratory number.</li>
+            <li>Read the practical experiment instructions.</li>
+            <li>Bring the required notebook and study material.</li>
+            <li>Reach the laboratory before the scheduled time.</li>
+            <li>Listen to the faculty instructions.</li>
+            <li>Perform the experiment according to the instructions.</li>
+            <li>Save your work and submit the practical record.</li>
+        </ol>
+
+    </section>
+
+    <hr>
+
+    <!-- Faculty Information -->
+    <section id="faculty">
+
+        <h2>5. Faculty Information</h2>
+
+        <ul>
+            <li><strong>Dr. Rahul Sharma</strong> – Python Programming</li>
+            <li><strong>Dr. Priya Singh</strong> – Engineering Mathematics</li>
+            <li><strong>Dr. Amit Kumar</strong> – Engineering Physics</li>
+            <li><strong>Dr. Neha Verma</strong> – Artificial Intelligence & ML</li>
+            <li><strong>Ms. Anjali Gupta</strong> – Communication Skills</li>
+            <li><strong>Mr. Arjun Mehta</strong> – Web Development</li>
+        </ul>
+
+    </section>
+
+    <hr>
+
+    <!-- Academic Terms -->
+    <section>
+
+        <h2>6. Academic Terms</h2>
+
+        <dl>
+
+            <dt><strong>Lecture</strong></dt>
+            <dd>
+                A classroom session where theoretical concepts are explained.
+            </dd>
+
+            <dt><strong>Lab</strong></dt>
+            <dd>
+                A practical session where students perform experiments or
+                programming activities.
+            </dd>
+
+            <dt><strong>Tutorial</strong></dt>
+            <dd>
+                A guided academic session focused on solving problems
+                and understanding concepts.
+            </dd>
+
+            <dt><strong>Internal Assessment</strong></dt>
+            <dd>
+                Evaluation conducted during the semester through tests,
+                assignments, quizzes or other academic activities.
+            </dd>
+
+            <dt><strong>Practical</strong></dt>
+            <dd>
+                An activity where students apply theoretical knowledge
+                through hands-on work.
+            </dd>
+
+        </dl>
+
+    </section>
+
+    <hr>
+
+    <!-- Academic Rules -->
+    <section id="rules">
+
+        <h2>7. Academic Rules</h2>
+
+        <ul>
+            <li>
+                <strong>Students must maintain regular attendance.</strong>
+            </li>
+
+            <li>
+                <strong>Students must carry their college ID card.</strong>
+            </li>
+
+            <li>
+                Students must arrive on time for lectures and practicals.
+            </li>
+
+            <li>
+                Mobile phones should be used only when permitted by the faculty.
+            </li>
+
+            <li>
+                Students must maintain cleanliness in classrooms and laboratories.
+            </li>
+
+            <li>
+                Students must submit assignments before the specified deadline.
+            </li>
+
+            <li>
+                <strong>Students must follow all laboratory safety instructions.</strong>
+            </li>
+        </ul>
+
+    </section>
+
+    <hr>
+
+    <!-- Department Message -->
+    <section>
+
+        <h2>8. Department Message</h2>
+
+        <blockquote>
+            "Our goal is to provide students with strong technical knowledge,
+            practical experience and the confidence to solve real-world
+            problems using modern technologies."
+        </blockquote>
+
+        <p>
+            — Department of Computer Science & Engineering
+        </p>
+
+    </section>
+
+    <hr>
+
+    <!-- Website -->
+    <section>
+
+        <h2>9. Department Website</h2>
+
+        <p>
+            Visit the official university website for additional academic
+            information:
+        </p>
+
+        <a
+            href="https://www.gla.ac.in/"
+            target="_blank"
+        >
+            Visit GLA University Official Website
+        </a>
+
+    </section>
+
+    <hr>
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>10. Contact</h2>
+
+        <p>
+            <strong>Department of Computer Science & Engineering</strong>
+        </p>
+
+        <p>
+            GLA University<br>
+            Mathura, Uttar Pradesh, India
+        </p>
+
+        <p>
+            Email:
+            <a href="mailto:cse@example.com">
+                cse@example.com
+            </a>
+        </p>
+
+        <p>
+            Phone:
+            <a href="tel:+919876543210">
+                +91 98765 43210
+            </a>
+        </p>
+
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Department Academic Portal
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
